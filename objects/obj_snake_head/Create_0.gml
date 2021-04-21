@@ -11,6 +11,7 @@ function growSnake()
 	/// @DnDArgument : "var" "child"
 	/// @DnDArgument : "var_temp" "1"
 	/// @DnDArgument : "objectid" "obj_snake_segment"
+	/// @DnDSaveInfo : "objectid" "obj_snake_segment"
 	var child = instance_create_layer(0, 0, "Instances", obj_snake_segment);
 
 	/// @DnDAction : YoYo Games.Common.If_Variable

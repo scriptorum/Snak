@@ -39,6 +39,23 @@ if(index >= 0)
 /// @DnDArgument : "arg_1" "y"
 script_execute(foodEffectEmit, x, y);
 
+/// @DnDAction : YoYo Games.Audio.Audio_Set_Pitch
+/// @DnDVersion : 1
+/// @DnDHash : 78AA20D3
+/// @DnDArgument : "sound" "klaxon1"
+/// @DnDArgument : "pitch" "random(0.4) + 0.8"
+/// @DnDSaveInfo : "sound" "klaxon1"
+audio_sound_pitch(klaxon1, random(0.4) + 0.8);
+
+/// @DnDAction : YoYo Games.Audio.Play_Audio
+/// @DnDVersion : 1
+/// @DnDHash : 2166B90F
+/// @DnDArgument : "target" "snd"
+/// @DnDArgument : "target_temp" "1"
+/// @DnDArgument : "soundid" "klaxon1"
+/// @DnDSaveInfo : "soundid" "klaxon1"
+var snd = audio_play_sound(klaxon1, 0, 0);
+
 /// @DnDAction : YoYo Games.Common.Function_Call
 /// @DnDVersion : 1
 /// @DnDHash : 5B099B6F
